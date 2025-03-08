@@ -16,6 +16,12 @@ g++-multilib
 libx11-dev
 mesa-common-dev
 ```
+**Fedora** needs these packages:
+```
+dnf install glibc-devel.i686
+dnf install /usr/include/GL/gl.h
+```
+Go to libstrangle/src/vulkan/overlay.cpp then below the comments: `#include <stdio.h>`
 
 **OpenSUSE** needs these packages:
 ```
